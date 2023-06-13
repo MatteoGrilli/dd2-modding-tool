@@ -1,0 +1,9 @@
+.Clickable {
+  cursor: pointer;
+  &:hover {
+    filter: brightness(1.6);
+  }
+  &:active {
+    filter: brightness(1.3)
+  }
+}

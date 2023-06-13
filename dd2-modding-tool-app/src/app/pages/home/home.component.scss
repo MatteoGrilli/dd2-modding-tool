@@ -1,0 +1,43 @@
+.Frame {
+  .CrossroadsImage {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 110%;
+    transform: translate(-22vw, 10vh);
+  }
+}
+
+.ToolTitle {
+  margin-bottom: 16px;
+}
+
+.OptionsContainer {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(-12vw, -50%);
+  width: 360px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .Intro {
+    display: block;
+    margin-bottom: 32px;
+  }
+
+  .Row {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    &:not(:last-child) {
+      margin-bottom: 16px;
+    }
+
+    .SubSectionTitle {
+      margin-right: 16px;
+    }
+  }
+}

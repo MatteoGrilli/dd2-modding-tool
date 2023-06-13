@@ -1,0 +1,13 @@
+.SectionTitle {
+  font-family: "DwarvenAxe BB W00 Regular", serif;
+  font-size: $text-large;
+  background: -webkit-linear-gradient($yellow-title-bright, $yellow-title-dark);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.SubSectionTitle {
+  font-family: "DwarvenAxe BB W00 Regular", serif;
+  font-size: $text-medium;
+  color: $yellow-text;
+}

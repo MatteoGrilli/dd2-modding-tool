@@ -1,0 +1,19 @@
+.ArrowButton {
+  width: 32px;
+  height: 32px;
+  background-color: $yellow-text;
+  border: none;
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+
+  // INVERSE MASK
+  -webkit-mask:
+     url("/assets/icons/arrow-right-bold.svg"),
+     linear-gradient(#fff,#fff);
+  -webkit-mask-composite:destination-out;
+          mask:
+     url("/assets/icons/arrow-right-bold.svg"),
+     linear-gradient(#fff,#fff);
+  mask-composite:exclude;
+}
+
+
