@@ -1,0 +1,6 @@
+element_start,candles_over_0,Condition
+m_ConditionType,profile_value,
+m_ConditionString,candles,
+m_ConditionNumber,0,
+m_ConditionNumberType,GREATER_THAN,
+element_end

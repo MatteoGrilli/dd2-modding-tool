@@ -15,7 +15,7 @@ export class TokenDataReaderService {
   ) { }
 
   public async readTokenDataExport(path: string): Promise<Token> {
-    return await firstValueFrom(this.httpClient.get(`/src/imports/${path}`, {responseType: 'text'})
+    return await firstValueFrom(this.httpClient.get(`/imports/${path}`, {responseType: 'text'})
       .pipe(
         tap(res => this.DEBUG ? console.log(res) : ''),
         map(res => ({} as Token))
