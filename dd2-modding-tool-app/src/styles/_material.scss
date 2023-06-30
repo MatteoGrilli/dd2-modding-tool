@@ -1,0 +1,9 @@
+.TransparentModalBox {
+  .mat-mdc-dialog-surface {
+    background-color: transparent !important;
+    overflow: visible;
+  }
+  .mat-mdc-dialog-container .mdc-dialog__content {
+    color: $text-color;
+  }
+}

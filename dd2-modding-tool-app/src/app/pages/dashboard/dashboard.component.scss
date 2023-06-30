@@ -1,0 +1,54 @@
+.AcademicImage {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 60%;
+  transform: translate(-50%, -20%);
+  mask-image: linear-gradient(to left, transparent, black 40%, black 60%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to left, transparent, black 40%, black 60%, transparent 100%);
+}
+
+.BackOption {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 16px;
+  left: 16px;
+
+  > *:not(:last-child) {
+    margin-right: 8px;
+  }
+}
+
+main {
+  position: relative;
+  height: 100vh;
+
+  .Content {
+    position: absolute;
+    bottom: 24px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    .SectionTitle {
+      margin-bottom: 24px;
+    }
+  }
+}
+
+.OptionsGrid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 24px;
+  grid-row-gap: 24px;
+}
+
+.OptionCard {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

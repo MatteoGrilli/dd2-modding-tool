@@ -5,3 +5,10 @@
     padding: 16px;
   }
 }
+
+.FancyCard {
+  border: 24px solid;
+  border-image: url('/assets/images/panels_bookpage_blue.png');
+  border-image-slice: 3.5% fill;
+  border-collapse: separate;
+}

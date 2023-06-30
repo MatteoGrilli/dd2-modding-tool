@@ -1,0 +1,9 @@
+@import 'palette';
+
+input {
+  display: none;
+}
+
+.WithGlow {
+  filter: drop-shadow(0px 0px 8px $yellow-text);
+}

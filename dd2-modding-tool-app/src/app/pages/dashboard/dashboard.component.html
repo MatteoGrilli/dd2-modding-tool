@@ -1,0 +1,23 @@
+<div class="Frame">
+  <img class="AcademicImage" src="/assets/images/studies.png" alt="Banner">
+</div>
+
+<div class="BackOption Clickable" routerLink="/">
+  <button class="ArrowButton Left"></button>
+  <span class="SubSectionTitle">Home</span>
+</div>
+
+<main>
+  <div class="Content">
+    <h1 class="SectionTitle">Index</h1>
+    <!-- There's gonna be way more than these I fear -->
+    <div class="OptionsGrid">
+
+      <div class="OptionCard FancyCard Clickable" *ngFor="let item of [].constructor(15)" routerLink="/tokens">
+        <div class="SubSectionTitle Gray">Tokens</div>
+        <button class="ArrowButton"></button>
+      </div>
+
+    </div>
+  </div>
+</main>

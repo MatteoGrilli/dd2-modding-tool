@@ -1,11 +1,11 @@
-.Frame {
-  .CrossroadsImage {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    height: 110%;
-    transform: translate(-22vw, 10vh);
-  }
+.SplashImage {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 100vh;
+  transform: translate(-15vw, 0);
+  mask-image: linear-gradient(to left, transparent, black 40%, black 60%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to left, transparent, black 40%, black 60%, transparent 100%);
 }
 
 .ToolTitle {
@@ -17,17 +17,19 @@
   top: 50%;
   right: 0;
   transform: translate(-12vw, -50%);
-  width: 360px;
+  width: 400px;
   display: flex;
   flex-direction: column;
   align-items: center;
 
   .Intro {
-    display: block;
-    margin-bottom: 32px;
+    line-height: 1.3em;
+    margin-bottom: 24px;
+    text-align: justify;
   }
 
   .Row {
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -40,4 +42,10 @@
       margin-right: 16px;
     }
   }
+}
+
+.Version {
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
 }

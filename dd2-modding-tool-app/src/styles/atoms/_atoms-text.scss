@@ -1,5 +1,5 @@
 .SectionTitle {
-  font-family: "DwarvenAxe BB W00 Regular", serif;
+  font-family: "NDDunkel Bold", serif;
   font-size: $text-large;
   background: -webkit-linear-gradient($yellow-title-bright, $yellow-title-dark);
   background-clip: text;
@@ -7,7 +7,11 @@
 }
 
 .SubSectionTitle {
-  font-family: "DwarvenAxe BB W00 Regular", serif;
+  font-family: "NDDunkel Bold", serif;
   font-size: $text-medium;
   color: $yellow-text;
+
+  &.Yellow { color: $yellow-text; }
+  &.Blue { color: $blue-text; }
+  &.Gray { color: $text-color; }
 }
