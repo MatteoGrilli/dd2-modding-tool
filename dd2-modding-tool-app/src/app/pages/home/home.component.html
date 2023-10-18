@@ -17,14 +17,16 @@
   </div>
 
   <div class="Row Clickable">
-    <span class="SubSectionTitle" (click)="openLocalPathModal(false)">Browse game files</span>
+    <span class="SubSectionTitle" (click)="openOriginalProfile()">Browse original DD2 files</span>
     <button class="ArrowButton"></button>
   </div>
-  <div class="Row Clickable">
+
+  <div class="Row Clickable" (click)="openModFolderSelectionModal(false)">
     <span class="SubSectionTitle">Browse mod files</span>
     <button class="ArrowButton"></button>
   </div>
-  <div class="Row Clickable" routerLink="/dashboard">
+
+  <div class="Row Disabled">
     <span class="SubSectionTitle">Create new mod</span>
     <button class="ArrowButton"></button>
   </div>
